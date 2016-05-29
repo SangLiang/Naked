@@ -4,7 +4,7 @@ import urllib.request
 def getHtml(url):  
     page = urllib.request.urlopen(url)  
     html = page.read().decode('utf-8')  
-    print (html) 
+    # print (html) 
     return html  
   
 def getImg(html):  
@@ -18,4 +18,4 @@ def getImg(html):
         x = x + 1          
      
 html = getHtml("http://tieba.baidu.com/p/2460150866")
-getImg(html)  
+getImg(html) 
