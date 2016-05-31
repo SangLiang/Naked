@@ -1,15 +1,14 @@
 import re  
 import urllib.request 
 
-def getHtml(url):
-    page = urllib.request.urlopen(url)
-    html = page.read().decode('gbk')
-    
-    reg = '百度'
-    resaa = re.compile(reg)
-    
-    listmy = resaa.findall(html)
-    print (html)
+s =urllib.request.urlopen('http://www.baidu.com')
+# sh = s.read().decode('utf-8')
+sh  = str(s.read())
+reObj1 = re.compile(r'src="(.+?\.png)"') 
+s2=reObj1.findall(sh)
 
+# print(sh)
+print(s2)
 
-getHtml("http://www.baidu.com")
+    
+   
