@@ -15,8 +15,8 @@ _temp = 0
 for item in urllist:
     urlLibs.append(item) 
     _temp = _temp+1
-    print('现在在导入第%d条'%(_temp))
-
+    
+print (urllist)
 print ('url待爬库的数量为%d'%(len(urllist)))
 
 
