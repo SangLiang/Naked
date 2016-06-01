@@ -1,3 +1,4 @@
+#encoding:UTF-8
 import re  
 import urllib.request 
 
@@ -7,8 +8,8 @@ sh  = str(s.read())
 reObj1 = re.compile(r'src="(.+?\.png)"') 
 s2=reObj1.findall(sh)
 
-# print(sh)
-print(s2)
+print(sh)
+# print(s2)
 
     
    
